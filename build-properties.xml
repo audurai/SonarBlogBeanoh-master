@@ -1,0 +1,25 @@
+<project name="build-properties">
+
+	<property name="project.dir" value="."/>
+	<property name="build.outdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/${project.name}" />
+	<property name="compile.outdir" value="${build.outdir}/classes" />
+	<property name="src.dir" value="${project.dir}/src/main/java" />
+	<property name="resources.dir" value="${project.dir}/src/main/resources" />
+<!-- 	<property name="project.outdir" value="${project.dir}/bin" /> -->
+	<property name="test.src.dir" value="${project.dir}/src/test/java" />
+	<property name="test.resources.dir" value="${project.dir}/src/test/resources" />
+	<property name="buildtools.dir" value="."/>
+	<property name="project.lib" value="${project.dir}/lib"/>
+	<property name="emma.enabled" value="true"/>
+	
+	<path id="compile.path" location="${compile.outdir}"/>
+	
+	<path id="test.lib">
+		<fileset dir="${project.dir}/lib" includes="**/*.jar" />
+	</path>
+	
+	<path id="build.classpath">
+		<fileset dir="${project.dir}/lib" includes="**/*.jar" />	
+	</path>
+	
+</project>   

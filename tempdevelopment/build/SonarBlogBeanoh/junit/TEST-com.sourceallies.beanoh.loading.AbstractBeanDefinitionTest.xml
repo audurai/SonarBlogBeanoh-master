@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Admin-PC" name="com.sourceallies.beanoh.loading.AbstractBeanDefinitionTest" skipped="0" tests="1" time="0.031" timestamp="2015-03-01T15:45:13">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sonar.projectName" value="SonarBlogBeanoh" />
+    <property name="eclipse.pdebuild.templates" value="/F:/spring-tool-suite-3.6.0.RELEASE-e4.4-win32/sts-bundle/sts-3.6.0.RELEASE/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+    <property name="inst.outdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/inst" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="ant.file.SonarAntProject" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\build-sonar.xml" />
+    <property name="ant.file.type.Groovy" value="file" />
+    <property name="os.name" value="Windows 7" />
+    <property name="sun.boot.class.path" value="F:\Java\jdk1.6.0_31\jre\lib\resources.jar;F:\Java\jdk1.6.0_31\jre\lib\rt.jar;F:\Java\jdk1.6.0_31\jre\lib\sunrsasign.jar;F:\Java\jdk1.6.0_31\jre\lib\jsse.jar;F:\Java\jdk1.6.0_31\jre\lib\jce.jar;F:\Java\jdk1.6.0_31\jre\lib\charsets.jar;F:\Java\jdk1.6.0_31\jre\lib\modules\jdk.boot.jar;F:\Java\jdk1.6.0_31\jre\classes" />
+    <property name="TODAY" value="March 1 2015" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.apache.ant_1.9.2.v201404171502" />
+    <property name="java.runtime.version" value="1.6.0_31-b05" />
+    <property name="junit.report.xml" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/junit" />
+    <property name="sonar.core.codeCoveragePlugin" value="emma" />
+    <property name="emma.outdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/emma" />
+    <property name="junit.report.html" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/junit" />
+    <property name="ant.file.SonarBlogBeanoh" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\build.xml" />
+    <property name="user.name" value="Admin" />
+    <property name="sonar.surefire.reportsPath" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/junit" />
+    <property name="mysonar.organizationName" value="com.asaed" />
+    <property name="ant.file.type.build" value="file" />
+    <property name="ant.build.javac.target" value="1.6" />
+    <property name="test.resources.dir" value="./src/test/resources" />
+    <property name="user.language" value="en" />
+    <property name="ant.file.type.SonarAntProject" value="file" />
+    <property name="sun.boot.library.path" value="F:\Java\jdk1.6.0_31\jre\bin" />
+    <property name="compile.outdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/classes" />
+    <property name="ant.file.build" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\build-tools.xml" />
+    <property name="ant.project.default-target" value="sonar" />
+    <property name="ant.project.name" value="SonarBlogBeanoh" />
+    <property name="DSTAMP" value="20150301" />
+    <property name="java.version" value="1.6.0_31" />
+    <property name="user.timezone" value="" />
+    <property name="resources.dir" value="./src/main/resources" />
+    <property name="ant.file.type.build-properties" value="file" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="test.src.dir" value="./src/test/java" />
+    <property name="emma.coverage.out.file" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/emma/coverage.ec" />
+    <property name="java.endorsed.dirs" value="F:\Java\jdk1.6.0_31\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="F:\Java\jdk1.6.0_31\jre" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="20.6-b01" />
+    <property name="ant.file.type.SonarBlogBeanoh" value="file" />
+    <property name="sonar.emma.reportPath" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/emma" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.apache.ant_1.9.2.v201404171502\lib" />
+    <property name="ant.file.type.build-test" value="file" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="eclipse.pdebuild.scripts" value="/F:/spring-tool-suite-3.6.0.RELEASE-e4.4-win32/sts-bundle/sts-3.6.0.RELEASE/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+    <property name="ant.build.javac.source" value="1.6" />
+    <property name="test.outdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/test" />
+    <property name="user.home" value="C:\Users\Admin" />
+    <property name="ant.file.build-test" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\build-test.xml" />
+    <property name="junit.tmpdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/temp" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="test.dir" value="./src/test" />
+    <property name="ant.file.Groovy" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\build-groovy.xml" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.library.path" value="F:\Java\jdk1.6.0_31\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_31/bin/client;C:/Program Files/Java/jre1.8.0_31/bin;C:/Program Files/Java/jre1.8.0_31/lib/i386;C:\ProgramData\Oracle\Java\javapath;F:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\QuickTime\QTSystem\F:\apache-maven-3.0.5-bin\apache-maven-3.0.5\bin;F:\Java\jdk1.6.0_31\bin;F:\TortoiseSVN\bin;F:\Java\jdk1.6.0_31\bin;F:\opscode\chefdk\bin;F:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\QuickTime\QTSystem\;F:\apache-maven-3.0.5-bin\apache-maven-3.0.5\bin;F:\Java\jdk1.6.0_31\bin;;F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE;;." />
+    <property name="emma.rt.control" value="false" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="buildtools.dir" value="." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\tempdevelopment\build\SonarBlogBeanoh\inst;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\antlr-2.7.6.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\aopalliance-1.0.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\asm-3.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\aspectjweaver-1.6.8.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\cglib-2.2.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\commons-collections-3.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\commons-logging-1.1.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\dom4j-1.6.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\hamcrest-core-1.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\hibernate-core-3.3.2.GA.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\hsqldb-1.8.0.10.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\icu4j-2.6.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\jaxen-1.1.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\jdom-1.0.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\jta-1.1.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\junit-4.8.2.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\log4j-1.2.16.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\mockito-core-1.8.5.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\objenesis-1.0.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\org.springframework.asm-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\org.springframework.beans-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\org.springframework.context-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\org.springframework.core-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\org.springframework.expression-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\org.springframework.test-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\org.springframework.web-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\servlet-api-2.5.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\slf4j-api-1.5.8.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\spring-aop-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\spring-jdbc-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\spring-orm-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\spring-tx-3.0.0.RELEASE.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\xalan-2.6.0.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\xercesImpl-2.6.2.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\xml-apis-1.3.02.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\xmlParserAPIs-2.6.2.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\lib\xom-1.0.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\tempdevelopment\build\SonarBlogBeanoh\test;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\emma-2.1.5320\emma.jar;E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\emma-2.1.5320\emma_ant.jar;F:\Java\jdk1.6.0_31\bin;F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-launcher.jar;F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar;F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit.jar;F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\junittestcases2544358750051322249.properties filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\tempdevelopment\build\SonarBlogBeanoh\junit\IGNORETHIS.xml crashfile=E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\junitvmwatcher1782480155569985815.properties propsfile=E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\junit1207100521239828499.properties" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
+    <property name="TSTAMP" value="2114" />
+    <property name="project.name" value="SonarBlogBeanoh" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="base.dir" value="." />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="build.outdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh" />
+    <property name="build.version" value="0.0.0.1-snapshot" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.io.tmpdir" value="E:/AuDurai/WorkSpaces/JenkinsTesting/SonarBlogBeanoh-master/tempdevelopment/build/SonarBlogBeanoh/temp" />
+    <property name="eclipse.pdebuild.home" value="/F:/spring-tool-suite-3.6.0.RELEASE-e4.4-win32/sts-bundle/sts-3.6.0.RELEASE/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="F:\Java\jdk1.6.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master" />
+    <property name="project.lib" value="./lib" />
+    <property name="emma.coverage.out.merge" value="true" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="F:\spring-tool-suite-3.6.0.RELEASE-e4.4-win32\sts-bundle\sts-3.6.0.RELEASE\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar" />
+    <property name="emma.enabled" value="true" />
+    <property name="Xmx" value="512M" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="ant.file.build-properties" value="E:\AuDurai\WorkSpaces\JenkinsTesting\SonarBlogBeanoh-master\build-properties.xml" />
+    <property name="destination.file.name" value="beanoh.jar" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="src.dir" value="./src/main/java" />
+    <property name="ant.project.invoked-targets" value="sonar" />
+    <property name="project.dir" value="." />
+  </properties>
+  <testcase classname="com.sourceallies.beanoh.loading.AbstractBeanDefinitionTest" name="testScanning" time="0.015" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

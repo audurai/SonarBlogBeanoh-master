@@ -1,0 +1,13 @@
+<project name="SonarBlogBeanoh" default="sonar">
+	<property name="ant.build.javac.target" value="1.6" />
+	<property name="ant.build.javac.source" value="1.6" />
+	
+	<property file="build.properties" />	
+	<property name="build.version" value="0.0.0.1-snapshot" />
+	<property name="base.dir" value="."/>
+	<property name="destination.file.name" value="beanoh.jar"/>
+	<property name="project.name" value="SonarBlogBeanoh" />
+	<import file="build-tools.xml"/>
+	
+		
+</project>

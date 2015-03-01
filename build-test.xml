@@ -1,0 +1,118 @@
+<project name="build-test" default="compile-test">
+	
+	<import file="build-properties.xml"/>
+	
+	<property name="test.dir" value="${project.dir}/src/test" />
+	<property name="test.outdir" value="${build.outdir}/test" />
+	<property name="inst.outdir" value="${build.outdir}/inst" />
+	<property name="emma.outdir" value="${build.outdir}/emma" />
+	<property name="junit.report.xml" value="${build.outdir}/junit" />
+	<property name="junit.report.html" value="${build.outdir}/junit" />
+	
+	<property name="junit.tmpdir" value="${build.outdir}/temp" />
+	
+	<path id="emma.lib" >
+		<pathelement location="${buildtools.dir}/emma-2.1.5320/emma.jar" />
+	    <pathelement location="${buildtools.dir}/emma-2.1.5320/emma_ant.jar" />
+	</path>
+
+	<taskdef resource="emma_ant.properties" classpathref="emma.lib" />
+	
+	<path id="test.classpath">
+			<path refid="compile.path"/>
+			<path refid="test.lib" />
+	</path>
+	
+	<target name="compile-test">
+		<mkdir dir="${test.outdir}" />
+		<mkdir dir="${emma.outdir}" />
+		<mkdir dir="${junit.tmpdir}" />
+	
+		<copy todir="${inst.outdir}">
+			<fileset dir="${compile.outdir}">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+	
+		<emma enabled="${emma.enabled}">
+			<instr instrpath="${inst.outdir}" mode="overwrite" metadatafile="${emma.outdir}/metadata.em" merge="false">
+				<filter value=""/>
+			</instr>
+		</emma>
+
+		<groovyc srcdir="${test.src.dir}" destdir="${test.outdir}" classpathref="test.classpath">
+			<javac deprecation="on" debug="on"/>
+		</groovyc>
+
+		<copy todir="${test.outdir}" failonerror="false">
+			<fileset dir="${test.src.dir}">
+				<exclude name="**/*.java" />
+				<exclude name="resources/**" />
+			</fileset>
+			<fileset dir="${resources.dir}">
+				<include name="**/*.*" />
+				<exclude name="**/persistence.xml" />
+			</fileset>
+			<fileset dir="${test.resources.dir}">
+				<include name="**/*.*" />
+			</fileset>						
+		</copy>
+	</target>
+
+	<target name="junit">
+		<mkdir dir="${junit.report.xml}" />
+		<junit fork="yes" forkmode="once" printsummary="yes" haltonerror="false" haltonfailure="false" failureproperty="junit.fail">
+			<jvmarg value="-Demma.coverage.out.file=${emma.outdir}/coverage.ec" />
+			<jvmarg value="-Demma.coverage.out.merge=true" />
+			<jvmarg value="-Demma.rt.control=false" />
+			<jvmarg value="-DXmx=512M" />
+			<jvmarg value="-Djava.io.tmpdir=${junit.tmpdir}" />
+			
+			<formatter type="xml" />
+			<batchtest todir="${junit.report.xml}">
+				<fileset dir="${test.outdir}">
+					<include name="**/*Test.class" />
+				</fileset>
+			</batchtest>
+			<classpath>
+				<pathelement location="${inst.outdir}" />
+				<path refid="test.lib"/> 
+				<pathelement location="${test.outdir}"/>
+				<path refid="emma.lib" />
+			</classpath>
+		</junit>
+
+
+		<emma enabled="${emma.enabled}">
+			<report sourcepath="${src.dir}">
+				<fileset dir="${emma.outdir}" includes="**/*.e*" />
+				<html outfile="${emma.outdir}/coverage.html" />
+			</report>
+		</emma>
+		<mkdir dir="${junit.report.html}" />
+		<junitreport todir="${junit.report.xml}">
+			<fileset dir="${junit.report.xml}" includes="TEST-*.xml" />
+			<report format="noframes" todir="${junit.report.html}" />
+		</junitreport>
+		<fail if="junit.fail" message="Junit tests failed" />		
+	</target>
+
+	<target name="junitreport" unless="supress.junitreport">
+		<mkdir dir="${junit.report.html}" />
+		<junitreport todir="${junit.report.xml}">
+			<fileset dir="${junit.report.xml}" includes="TEST-*.xml" />
+			<report format="noframes" todir="${junit.report.html}" />
+		</junitreport>
+	</target>
+
+	<target name="emma">
+		<emma enabled="${emma.enabled}">
+			<report sourcepath="${src.dir}">
+				<fileset dir="${emma.outdir}" includes="**/*.e*" />
+				<html outfile="${emma.outdir}/coverage.html" />
+			</report>
+		</emma>
+	</target>
+	
+	<target name="test" depends="compile-test, junit, emma" />
+</project>

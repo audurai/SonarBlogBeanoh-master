@@ -1,0 +1,12 @@
+<project name="Groovy">
+	
+	<path id="groovy.lib.path">
+		<fileset dir="${buildtools.dir}/groovy" includes="groovy-all-1.8.6.jar" />
+	</path>
+
+	<taskdef name="groovy" classname="org.codehaus.groovy.ant.Groovy" classpathref="groovy.lib.path" />
+
+	<taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc" classpathref="groovy.lib.path" />
+
+	<import file="build-properties.xml"/>
+</project>

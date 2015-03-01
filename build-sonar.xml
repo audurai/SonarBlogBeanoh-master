@@ -1,0 +1,65 @@
+<project name="SonarAntProject" default="sonar">
+
+	<import file="build-properties.xml"/>
+	
+	<property name="build.version" value="0.0.0.1-Sonar"/>
+  	<property name="mysonar.organizationName" value="com.asaed"/>
+   	<property name="sonar.projectName" value="${project.name}" />
+	
+    <property name='sonar.surefire.reportsPath' value='${junit.report.xml}'/>
+	<property name="sonar.core.codeCoveragePlugin" value="emma"/>
+  	<property name='sonar.emma.reportPath' value='${emma.outdir}'/>
+
+	<path id="sonar.classpath">
+		<fileset dir="${buildtools.dir}/sonar" includes="**/*.jar" />
+ 	</path>
+
+	<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+    		<classpath refid="sonar.classpath" />
+  	</taskdef>
+
+  	<target name="sonar" depends="clean, compile, compile-test, test">
+  		
+  		<!--
+  		<property name="sonar.jdbc.url"
+  				     value="jdbc:mysql://localhost:3306/sonar_temp?useUnicode=true&amp;characterEncoding=utf8" />
+		<property name="sonar.jdbc.driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="sonar.jdbc.username" value="sonar_temp" />
+		<property name="sonar.jdbc.password" value="sonar_temp" />
+  		
+  		<property name="sonar.host.url" value="http://localhost:9001/sonar" />
+  		-->
+  		
+  		<property name="sonar.jdbc.url"
+  		  				     value="jdbc:h2:tcp://localhost:9092/sonar" />
+  				<property name="sonar.embeddedDatabase.port" value="9092" />
+  				<property name="sonar.jdbc.username" value="sonar" />
+  				<property name="sonar.jdbc.password" value="sonar" />
+  		  		
+  		  		<property name="sonar.host.url" value="http://localhost:9000" />
+  		
+  		<sonar:sonar key="${mysonar.organizationName}:${sonar.projectName}" version="${build.version}" xmlns:sonar="antlib:org.sonar.ant">
+
+     	    <sources>
+    		  <path location="${project.dir}/src/main/java"/>
+	    	  <path location="${project.dir}/src/main/resources"/>
+    	    </sources>
+  			
+  			<tests>
+	    		<path location="${project.dir}/src/test/java"/>
+	    		<path location="${project.dir}/src/test/resources"/>
+	    	</tests>
+  			
+  			<binaries>
+	    		<path location="${compile.outdir}"/>
+	    	</binaries>
+	    	<libraries>
+	    		<path>
+			   		 <fileset dir="${project.dir}/lib" includes="*.jar" />
+				</path>
+	    	</libraries>
+
+    	</sonar:sonar>
+ 	</target>
+
+</project>
